@@ -6,6 +6,6 @@ public class MainConventions {
 
         System.out.println("Primeira aula");
         System.out.println("Git is fucking important");
-        
+        System.out.println("I believe him i saying the truth!!!");
     }
 }
