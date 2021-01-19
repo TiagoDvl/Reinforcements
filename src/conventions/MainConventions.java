@@ -10,10 +10,11 @@ public class MainConventions {
         System.out.println("Git is fucking important");
         System.out.println("I believe him i saying the truth!!!");
 
-       Convention convention = new Convention("packages","Classes","Variables","Identation");
-        System.out.println("the first topic in the convenction section is " + convention.topico1);
-        System.out.println("the second topic in the convenction section is " + convention.topico2);
-        System.out.println("the third topic in the convenction section is " + convention.topico3);
-        System.out.println("the fourth topic in the convenction section is " + convention.topico4);
+        Convention convention = new Convention(Convention.Type.CLASSES);
+        convention.showSpentTimePerClass();
+
+        for (Convention.Type type : Convention.Type.values()) {
+            System.out.println("The topic in the convention section is " + type.name());
+        }
     }
 }
