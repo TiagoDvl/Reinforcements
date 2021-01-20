@@ -5,7 +5,7 @@ public class Convention {
     private Type type;
 
     enum Type {
-        PACKAGES, CLASSES, VARIABLES, IDENTATION
+        PACKAGES, CLASSES, VARIABLES, IDENTATION, GIT
     }
 
     public Convention(Type conventionType) {
@@ -20,9 +20,11 @@ public class Convention {
             case CLASSES: timeSpent = 1; break;
             case VARIABLES: timeSpent = 1; break;
             case IDENTATION: timeSpent = 1; break;
+            case GIT: timeSpent = 1; break;
         }
 
         System.out.println("Time spent in " + type.name() + " is " + timeSpent);
+
         return timeSpent;
     }
 }
