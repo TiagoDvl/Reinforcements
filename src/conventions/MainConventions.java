@@ -1,7 +1,5 @@
 package conventions;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 public class MainConventions {
 
     public static void main(String[] args) {
