@@ -110,7 +110,7 @@ public class Main {
             System.out.println("How is number 1 on the Pokedex?");
             System.out.println("A.Squirtle");
             System.out.println("B.Charmander");
-            System.out.println("C.bulbasaur");
+            System.out.println("C.Bulbasaur");
 
 
             answer = scanner.nextLine();
