@@ -12,4 +12,9 @@ public class Customer {
     public int getDebt() {
         return debt;
     }
+
+    public void setDebt(int debt) {
+        this.debt = debt;
+
+    }
 }
