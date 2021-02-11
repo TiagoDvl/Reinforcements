@@ -6,26 +6,23 @@ public class Cashier {
 
     private Customer currentCustomer;
 
-    public Cashier(Customer customer) {
-        currentCustomer = customer;
+    public Cashier(Customer customer) { currentCustomer = customer; }
 
-    }
-
-    public void checkout(PaymentMethod paymentMethod) throws InterruptedException {
+    public void checkout(PaymentMethod paymentMethod) {
 
         for (int i = 0; i < 3; i++) {
             switch(i) {
                 case 0:
                     System.out.println("cashier: Good evening Sir!");
-                    TimeUnit.SECONDS.sleep(2);
+
                     System.out.println("cash register: pi...pi...pi..pi... ");
-                    TimeUnit.SECONDS.sleep(2);
+
                     break;
                 case 1:
                     System.out.println("cashier: it will be " + currentCustomer.getDebt());
-                    TimeUnit.SECONDS.sleep(1);
+
                     System.out.println("cashier: Are you paying cash or card ?");
-                    TimeUnit.SECONDS.sleep(1);
+
 
                     break;
             }

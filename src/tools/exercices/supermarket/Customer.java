@@ -15,6 +15,5 @@ public class Customer {
 
     public void setDebt(int debt) {
         this.debt = debt;
-
     }
 }

@@ -2,12 +2,12 @@ package tools.exercices.supermarket;
 
 public class Main {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
 
         Customer customer = new Customer("Tiago");
         customer.setDebt(25);
         Cashier cashier = new Cashier(customer);
-       cashier.checkout(PaymentMethod.CARD);
+        cashier.checkout(PaymentMethod.CARD);
 
 
     }
