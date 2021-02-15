@@ -1,4 +1,6 @@
 package tools.exercices.supermarket;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Customer {
 
@@ -10,7 +12,17 @@ public class Customer {
     }
 
     public int getDebt() {
-        return debt;
+      List<Integer> customerDebt = new ArrayList();
+      customerDebt.add(11);
+      customerDebt.add(22);
+      customerDebt.add(33);
+      customerDebt.add(44);
+
+
+      for (int i = 0; i < customerDebt.size(); i++) {
+          debt = debt + customerDebt.get(i);
+      }
+      return debt;
     }
 
     public void setDebt(int debt) {

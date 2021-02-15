@@ -1,7 +1,5 @@
 package tools.exercices.supermarket;
 
-import java.util.concurrent.TimeUnit;
-
 public class Cashier {
 
     private Customer currentCustomer;
