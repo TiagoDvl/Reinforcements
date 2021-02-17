@@ -12,16 +12,11 @@ public class Cashier {
             switch(i) {
                 case 0:
                     System.out.println("cashier: Good evening Sir!");
-
                     System.out.println("cash register: pi...pi...pi..pi... ");
-
                     break;
                 case 1:
                     System.out.println("cashier: it will be " + currentCustomer.getDebt());
-
                     System.out.println("cashier: Are you paying cash or card ?");
-
-
                     break;
             }
         }
@@ -38,14 +33,7 @@ public class Cashier {
             case PAYPAL:
                 System.out.println("customer: I'll pay paypal !");
                 break;
-
         }
-
-
-        // Customer should be charged for his debt.
-        // 1 - Create 3 possible payment methods
-        // 2 - Add a way to add mor debt to a Customer
-        // 3 - Create a condition to each payment method to pay customer debt.
 
     }
 }

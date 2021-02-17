@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Customer {
 
-    private int debt;
+    List<Integer> customerDebt = new ArrayList();
     private String name;
 
     public Customer(String name) {
@@ -12,23 +12,16 @@ public class Customer {
     }
 
     public int getDebt() {
-      return debt;
-    }
-
-    public void amountDebt() {
-        List<Integer> customerDebt = new ArrayList();
-        customerDebt.add(11);
-        customerDebt.add(22);
-        customerDebt.add(33);
-        customerDebt.add(44);
-
+        int totalDebt = 0;
 
         for (int i = 0; i < customerDebt.size(); i++) {
-            debt = debt + customerDebt.get(i);
+            totalDebt = totalDebt + customerDebt.get(i);
         }
+
+        return totalDebt;
     }
 
-    public void setDebt(int debt) {
-        this.debt = debt;
+    public void addDebt(int debt) {
+        customerDebt.add(debt);
     }
 }
